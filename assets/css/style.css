@@ -1,3 +1,8 @@
+/* html {
+    position: relative !important;
+    min-height: 100% !important;
+} */
+
 body {
     background: -webkit-linear-gradient(360deg, #1C1C1C 10%, #494949 360%); background: -moz-linear-gradient(360deg, #1C1C1C 10%, #494949 360%); background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
 }
@@ -9,3 +14,20 @@ h1 {
     padding: 5px; 
     color: black;
 };
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    display:none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+
+#questionCard {
+    display: inline-block;
+}
