@@ -1,3 +1,7 @@
+$(document).ready(function(){
+
+
+
 //Question and answer bank:
 var questions = [{
     question: "What player has the nickname of Ice Man?",
@@ -57,7 +61,7 @@ var timer;
       card.append("<h5>" + questions[i].question + "</h5>");
       for (var j = 0; j < questions[i].answers.length; j++) {
         card.append("<input type='radio' name='question-" + i +
-        "' value='" + questions[i].answers[j] + "''>" + "  " + questions[i].answers[j] + "  " + "<p>");
+        "' value='" + questions[i].answers[j] + "''>" + "  " + questions[i].answers[j] + "  " + "<br>");
       }
     }
      card.append("<button id='done'>Done</button>");
@@ -162,4 +166,6 @@ $(document).on("click", "#start", function() {
   });
  $(document).on("click", "#done", function() {
   game.done();
+});
+
 });
